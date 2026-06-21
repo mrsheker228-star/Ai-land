@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vladimir AI — агентство по AI-автоматизации</title>
+  <meta name="description" content="Vladimir AI — агентство по AI-автоматизации. Строим автоматизации, ботов и AI-агентов, которые работают за вас 24/7." />
+
+  <!-- Иконка вкладки -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%231a1a1a'/%3E%3Cg%20fill='%23d97757'%20transform='translate(16%2016)'%3E%3Crect%20x='-1.3'%20y='-9.5'%20width='2.6'%20height='19'%20rx='1.3'/%3E%3Crect%20x='-1.3'%20y='-9.5'%20width='2.6'%20height='19'%20rx='1.3'%20transform='rotate(30)'/%3E%3Crect%20x='-1.3'%20y='-9.5'%20width='2.6'%20height='19'%20rx='1.3'%20transform='rotate(60)'/%3E%3Crect%20x='-1.3'%20y='-9.5'%20width='2.6'%20height='19'%20rx='1.3'%20transform='rotate(90)'/%3E%3Crect%20x='-1.3'%20y='-9.5'%20width='2.6'%20height='19'%20rx='1.3'%20transform='rotate(120)'/%3E%3Crect%20x='-1.3'%20y='-9.5'%20width='2.6'%20height='19'%20rx='1.3'%20transform='rotate(150)'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <!-- Превью при шаринге ссылки (OG). После деплоя замени og:url/og:image на абсолютный URL сайта -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vladimir AI — агентство по AI-автоматизации" />
+  <meta property="og:description" content="Боты, AI-агенты и автоматизации, которые работают за вас 24/7. Заполните анкету — предложим, что автоматизировать." />
+  <meta property="og:image" content="og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SVG-иконка «искра» (коралловая), используется по всему сайту -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="spark" viewBox="0 0 24 24">
+      <g fill="currentColor" transform="translate(12 12)">
+        <rect x="-1.2" y="-11" width="2.4" height="22" rx="1.2" />
+        <rect x="-1.2" y="-11" width="2.4" height="22" rx="1.2" transform="rotate(30)" />
+        <rect x="-1.2" y="-11" width="2.4" height="22" rx="1.2" transform="rotate(60)" />
+        <rect x="-1.2" y="-11" width="2.4" height="22" rx="1.2" transform="rotate(90)" />
+        <rect x="-1.2" y="-11" width="2.4" height="22" rx="1.2" transform="rotate(120)" />
+        <rect x="-1.2" y="-11" width="2.4" height="22" rx="1.2" transform="rotate(150)" />
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- фоновые декорации -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ШАПКА -->
+  <header class="nav">
+    <a href="#top" class="brand">
+      <svg class="brand__spark"><use href="#spark" /></svg>
+      Vladimir&nbsp;AI
+    </a>
+    <a class="nav__cta" href="https://t.me/testbotddjfgndfgjdfmgjjbot" target="_blank" rel="noopener">
+      Заполнить анкету
+    </a>
+  </header>
+
+  <!-- ГЛАВНЫЙ ЭКРАН -->
+  <main id="top">
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__badge reveal"><svg class="ic"><use href="#spark" /></svg> Агентство AI-автоматизации</div>
+        <h1 class="hero__title reveal">
+          Мы строим <span class="mark">AI-автоматизации</span>,
+          которые работают за вас <span class="nowrap">24/7</span>
+        </h1>
+        <p class="hero__lead reveal">
+          Vladimir&nbsp;AI — агентство по AI-автоматизации. Берём рутину, ручные процессы
+          и переписку с клиентами — и превращаем их в умные системы: ботов, агентов и
+          автоматизации, которые не устают и не уходят на обед.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="https://t.me/testbotddjfgndfgjdfmgjjbot" target="_blank" rel="noopener">
+            Заполнить анкету →
+          </a>
+          <a class="btn btn--ghost" href="#what">Что мы умеем</a>
+        </div>
+        <div class="hero__strip reveal">
+          <span>⚡ Запуск за дни</span>
+          <span>🤖 Боты и AI-агенты</span>
+          <span>🔗 Интеграции под ключ</span>
+        </div>
+      </div>
+
+      <!-- Живой мокап чата с ботом -->
+      <div class="hero__visual reveal">
+        <div class="chat" id="chat">
+          <div class="chat__bar">
+            <span class="chat__avatar"><svg><use href="#spark" /></svg></span>
+            <div class="chat__meta">
+              <strong>Vladimir AI</strong>
+              <small>бот · онлайн</small>
+            </div>
+            <span class="chat__bars">
+              <i></i><i></i><i></i>
+            </span>
+          </div>
+          <div class="chat__body" id="chatBody"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Автоматизации</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>Telegram-боты</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>AI-агенты</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>Голосовые ассистенты</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>Интеграции&nbsp;&amp;&nbsp;API</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>Обработка данных</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>Автоматизации</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>Telegram-боты</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>AI-агенты</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>Голосовые ассистенты</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>Интеграции&nbsp;&amp;&nbsp;API</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+        <span>Обработка данных</span><span class="dot"><svg class="ic"><use href="#spark" /></svg></span>
+      </div>
+    </div>
+
+    <!-- СТАТИСТИКА -->
+    <section class="stats">
+      <div class="stat reveal">
+        <div class="stat__num" data-count="24" data-suffix="/7">0</div>
+        <div class="stat__label">работают без выходных</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="90" data-suffix="%">0</div>
+        <div class="stat__label">рутины можно автоматизировать</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="5" data-suffix="x">0</div>
+        <div class="stat__label">быстрее обработка заявок</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="7" data-suffix=" дн.">0</div>
+        <div class="stat__label">средний срок до запуска</div>
+      </div>
+    </section>
+
+    <!-- ЧТО УМЕЕМ -->
+    <section class="what" id="what">
+      <h2 class="section__title reveal">Что мы умеем</h2>
+      <p class="section__sub reveal">Полный цикл — от идеи до работающей системы.</p>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__icon">🔄</div>
+          <h3>Автоматизации</h3>
+          <p>Соединяем ваши сервисы, CRM и таблицы в единый поток. Рутинные действия выполняются сами, без участия человека.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">💬</div>
+          <h3>Чат-боты</h3>
+          <p>Боты для Telegram, сайта и мессенджеров: принимают заявки, отвечают на вопросы и квалифицируют клиентов круглосуточно.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon"><svg class="ic"><use href="#spark" /></svg></div>
+          <h3>AI-агенты</h3>
+          <p>Умные агенты, которые рассуждают и действуют: разбирают запросы, ищут информацию и доводят задачу до результата.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">📞</div>
+          <h3>Голосовые ассистенты</h3>
+          <p>AI принимает и совершает звонки, записывает на услуги и снимает нагрузку с менеджеров и колл-центра.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">🔗</div>
+          <h3>Интеграции и API</h3>
+          <p>Подключаем GPT и Claude, базы данных, платёжки и любые внешние сервисы — связываем всё под вашу задачу.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">📊</div>
+          <h3>AI-обработка данных</h3>
+          <p>Анализ переписок, документов и отчётов: AI извлекает суть, классифицирует и готовит сводки за секунды.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- КАК РАБОТАЕМ -->
+    <section class="steps">
+      <h2 class="section__title reveal">Как мы работаем</h2>
+      <div class="steps__grid">
+        <div class="step reveal">
+          <div class="step__num">01</div>
+          <h3>Заявка</h3>
+          <p>Вы заполняете короткую анкету — рассказываете о задаче и процессах.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">02</div>
+          <h3>Разбор</h3>
+          <p>Находим, что автоматизировать в первую очередь, и предлагаем решение.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">03</div>
+          <h3>Сборка</h3>
+          <p>Строим бота / агента / автоматизацию и интегрируем в ваши системы.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">04</div>
+          <h3>Запуск</h3>
+          <p>Внедряем, обучаем команду и сопровождаем — система работает за вас.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2 class="section__title reveal">Частые вопросы</h2>
+      <div class="faq__list reveal">
+        <details class="faq__item">
+          <summary>Сколько стоит автоматизация?</summary>
+          <p>Зависит от задачи и числа интеграций. После анкеты мы разбираем процесс и называем точную смету — без скрытых платежей.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Как быстро можно запуститься?</summary>
+          <p>Простого бота или автоматизацию запускаем за несколько дней. Сложные AI-агенты с интеграциями — от одной до пары недель.</p>
+        </details>
+        <details class="faq__item">
+          <summary>С какими сервисами вы работаете?</summary>
+          <p>Telegram, сайты, CRM, Google Sheets, базы данных, платёжные системы и любые сервисы с API. Подключаем GPT и Claude.</p>
+        </details>
+        <details class="faq__item">
+          <summary>А если у меня нет ТЗ?</summary>
+          <p>Это нормально. Заполните анкету в свободной форме — мы сами поможем сформулировать задачу и предложим решение.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta">
+      <h2 class="cta__title reveal">Готовы автоматизировать бизнес?</h2>
+      <p class="cta__sub reveal">
+        Заполните анкету в нашем Telegram-боте — это пара минут. Мы изучим задачу
+        и предложим, что можно автоматизировать прямо сейчас.
+      </p>
+      <a class="btn btn--primary btn--big reveal" href="https://t.me/testbotddjfgndfgjdfmgjjbot" target="_blank" rel="noopener">
+        Заполнить анкету →
+      </a>
+      <p class="cta__hint reveal">Откроется Telegram-бот @testbotddjfgndfgjdfmgjjbot</p>
+    </section>
+  </main>
+
+  <!-- Кнопка наверх -->
+  <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <svg class="brand__spark"><use href="#spark" /></svg> Vladimir&nbsp;AI
+    </div>
+    <p class="footer__tag">Агентство по AI-автоматизации</p>
+    <nav class="footer__links">
+      <a href="https://youtube.com/@vladimir_kkkkkk" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://t.me/vladimir_kkkkk" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://t.me/testbotddjfgndfgjdfmgjjbot" target="_blank" rel="noopener">Анкета</a>
+    </nav>
+    <p class="footer__copy">© 2026 Vladimir AI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
