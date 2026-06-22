@@ -85,20 +85,18 @@ const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function playChat() {
   if (!chatBody) return;
-  while (true) {
-    chatBody.innerHTML = "";
-    for (const msg of dialog) {
-      if (msg.who === "bot") {
-        const typing = addTyping();
-        await wait(reduceMotion ? 0 : 900);
-        typing.remove();
-      } else {
-        await wait(reduceMotion ? 0 : 500);
-      }
-      addBubble(msg.who, msg.text);
-      await wait(reduceMotion ? 200 : 800);
+  chatBody.innerHTML = "";
+  // проигрываем диалог один раз и оставляем его заполненным
+  for (const msg of dialog) {
+    if (msg.who === "bot") {
+      const typing = addTyping();
+      await wait(reduceMotion ? 0 : 850);
+      typing.remove();
+    } else {
+      await wait(reduceMotion ? 0 : 450);
     }
-    await wait(reduceMotion ? 600 : 3500);
+    addBubble(msg.who, msg.text);
+    await wait(reduceMotion ? 120 : 650);
   }
 }
 

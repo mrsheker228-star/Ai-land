@@ -18,7 +18,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -58,12 +58,16 @@
   <!-- ГЛАВНЫЙ ЭКРАН -->
   <main id="top">
     <section class="hero">
-      <div class="hero__content">
+      <div class="hero__top">
         <div class="hero__badge reveal"><svg class="ic"><use href="#spark" /></svg> Агентство AI-автоматизации</div>
         <h1 class="hero__title reveal">
-          Мы строим <span class="mark">AI-автоматизации</span>,
-          которые работают за вас <span class="nowrap">24/7</span>
+          Мы строим <span class="tie"><span class="mark">AI-автоматизации</span>, которые</span>
+          работают за вас <span class="circle">24/7</span>
         </h1>
+      </div>
+
+      <div class="hero__row">
+        <div class="hero__content">
         <p class="hero__lead reveal">
           Vladimir&nbsp;AI — агентство по AI-автоматизации. Берём рутину, ручные процессы
           и переписку с клиентами — и превращаем их в умные системы: ботов, агентов и
@@ -75,6 +79,13 @@
           </a>
           <a class="btn btn--ghost" href="#what">Что мы умеем</a>
         </div>
+        <p class="hero__note reveal">
+          <svg class="hero__arrow" viewBox="0 0 64 56" fill="none" aria-hidden="true">
+            <path d="M58,50 C30,52 12,40 12,10" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            <path d="M4,20 L12,6 L22,16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          бесплатно, займёт ~2 минуты
+        </p>
         <div class="hero__strip reveal">
           <span>⚡ Запуск за дни</span>
           <span>🤖 Боты и AI-агенты</span>
@@ -82,10 +93,13 @@
         </div>
       </div>
 
-      <!-- Живой мокап чата с ботом -->
+      <!-- Ноутбук: крышка открывается, на экране — чат с ботом -->
       <div class="hero__visual reveal">
-        <div class="chat" id="chat">
-          <div class="chat__bar">
+        <div class="laptop">
+          <div class="laptop__screen">
+            <div class="screen-wp">
+            <div class="chat" id="chat">
+              <div class="chat__bar">
             <span class="chat__avatar"><svg><use href="#spark" /></svg></span>
             <div class="chat__meta">
               <strong>Vladimir AI</strong>
@@ -96,7 +110,12 @@
             </span>
           </div>
           <div class="chat__body" id="chatBody"></div>
+            </div>
+            </div>
+          </div>
+          <div class="laptop__base"></div>
         </div>
+      </div>
       </div>
     </section>
 
